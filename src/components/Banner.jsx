@@ -2,6 +2,11 @@ import {useState} from "react";
 import {IoClose} from "react-icons/io5";
 import BannerVideo from "../assets/BannerVideo.mp4";
 import BannerFood from "../assets/BannerFood.webp";
+import BannerClock from "../assets/BannerClock.png";
+import BannerArrow from "../assets/BannerArrow.png";
+import BannerSmall1 from "../assets/Bannersmall1.png";
+import BannerSmall2 from "../assets/Bannersmall2.png";
+import BannerSmall3 from "../assets/Bannersmall3.png";
 
 const Banner = () => {
 	const [showVideo, setShowVideo] = useState(false);
@@ -29,8 +34,18 @@ const Banner = () => {
 					</div>
 				</div>
 			)}
-			{/* STUFF */}
-			<div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between"></div>
+			{/* CONTENT */}
+			<div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+				{/* Left Content */}
+				<div className="w-full lg:flex-1 text-center lg:text-left">
+					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl animate-slide-up font-extrabold leading-tight mb-4">
+						Hearty and Delicious Food from
+						<br />
+						<span className="text-orange-600">The Shire</span>
+					</h1>
+					<p></p>
+				</div>
+			</div>
 		</div>
 	);
 };
