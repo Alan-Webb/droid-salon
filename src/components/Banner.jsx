@@ -1,12 +1,12 @@
 import {useState} from "react";
 import {IoCloseCircle} from "react-icons/io5";
 import bannerVideo from "../assets/BannerVideo.mp4";
-import bannerFood from "../assets/Bannerfood.png";
+import bannerfood from "../assets/Bannerfood.png";
+import bannerArrow from "../assets/BannerArrow.png";
 import bannerClock from "../assets/BannerClock.png";
 import bannersmall1 from "../assets/Bannersmall1.png";
 import bannersmall2 from "../assets/Bannersmall2.png";
 import bannersmall3 from "../assets/Bannersmall3.png";
-import bannerArrow from "../assets/BannerArrow.png";
 
 const Banner = () => {
 	const [showVideo, setShowVideo] = useState(false);
