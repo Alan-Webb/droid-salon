@@ -12,21 +12,31 @@ const Banner = () => {
 	const [showVideo, setShowVideo] = useState(false);
 
 	return (
-		<div className="bg-white pt-12 md:pt-24 min-h-125">
+		<div className="bg-white pt-12 md:pt-24 min-h-125 flex items-center">
 			{/* VIDEO MODAL */}
-			<div className="fixed inset-o bg-black/50 z-50 flex items-center justify-center p-4">
-				<div className="bg-white p-4 md:p-8 rounded-lg w-full max-4xl relative">
-					{/* Close button */}
-					<button
-						onClick={() => setShowVideo(false)}
-						className="absolute -top-8 right-0 text-white text-2xl">
-						<IoCloseCircle />
-					</button>
-					<div className="aspect-video">
-						<iframe src={bannerVideo}></iframe>
+			{showVideo && (
+				<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+					<div className=" bg-white p-4 md:p-8 rounded-lg w-full max-w-4xl relative">
+						{/* Close button */}
+						<button
+							onClick={() => setShowVideo(false)}
+							className="absolute top-1 right-1 text-orange-500 text-4xl cursor-pointer">
+							<IoCloseCircle />
+						</button>
+						<div className="aspect-video">
+							<iframe
+								src={bannerVideo}
+								width="100%"
+								height="100%"
+								allow="autoplay"
+								allowFullScreen
+								className="rounded-lg"></iframe>
+						</div>
 					</div>
 				</div>
-			</div>
+			)}
+			{/* Buttons */}
+			<div></div>
 		</div>
 	);
 };
