@@ -17,7 +17,7 @@ const Banner = () => {
 			{showVideo && (
 				<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
 					<div className=" bg-white p-4 md:p-8 rounded-lg w-full max-w-4xl relative">
-						{/* Close button */}
+						{/* Close Button */}
 						<button
 							onClick={() => setShowVideo(false)}
 							className="absolute top-1 right-1 text-orange-500 text-4xl cursor-pointer">
@@ -35,8 +35,19 @@ const Banner = () => {
 					</div>
 				</div>
 			)}
-			{/* Buttons */}
-			<div></div>
+			{/* CONTENT */}
+			<div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+				{/* Left Content */}
+				<div className="w-full lg:flex-1 text-center lg:text-left">
+					<h3 className="text-lg mt-5 md:text-xl lg:text-2xl font-bold text-gray-600 mb-2 md:mb-3">
+						Second Breakfast Served All Day
+					</h3>
+					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl animate-slide-up font-extrabold leading-tight mb-4">
+						The <br />
+						<span className="text-orange-600">Shire</span>
+					</h1>
+				</div>
+			</div>
 		</div>
 	);
 };
