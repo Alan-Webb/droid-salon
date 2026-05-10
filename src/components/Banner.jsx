@@ -17,7 +17,7 @@ const Banner = () => {
 			{/* VIDEO MODAL */}
 			{showVideo && (
 				<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-					<div className=" bg-white p-4 md:p-8 rounded-lg w-full max-w-4xl relative">
+					<div className=" bg-orange-200 p-4 md:p-8 rounded-lg w-full max-w-4xl relative">
 						{/* Close Button */}
 						<button
 							onClick={() => setShowVideo(false)}
@@ -62,8 +62,8 @@ const Banner = () => {
 						</button>
 						<button
 							onClick={() => setShowVideo(true)}
-							className="flex items-center gap-2 uppercase md:gap-3 group cursor-pointer">
-							Play{""} <FaPlay />
+							className="flex items-center gap-2 uppercase px-6 py-2 md:px-8 md:py-3 md:gap-3 border rounded-full hover:bg-gray-100 transition hover:scale-105 text-sm md:text-base cursor-pointer">
+							Play <FaPlay />
 						</button>
 					</div>
 				</div>
