@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {IoCloseCircle} from "react-icons/io5";
+import {FaPlay} from "react-icons/fa";
 import bannerVideo from "../assets/BannerVideo.mp4";
 import bannerfood from "../assets/Bannerfood.png";
 import bannerArrow from "../assets/BannerArrow.png";
@@ -56,10 +57,14 @@ const Banner = () => {
 					</p>
 					{/* Buttons */}
 					<div className="flex flex-wrap justify-center lg:justify-start gap-4">
-						<button className="bg-red-500 text-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-red-600 transition hover:scale-105 text-sm md:text-base cursor-pointer">
+						<button className="bg-red-500 text-white uppercase px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-red-600 transition hover:scale-105 text-sm md:text-base cursor-pointer">
 							Get Started
 						</button>
-						<button></button>
+						<button
+							onClick={() => setShowVideo(true)}
+							className="flex items-center gap-2 uppercase md:gap-3 group cursor-pointer">
+							Play{""} <FaPlay />
+						</button>
 					</div>
 				</div>
 			</div>
