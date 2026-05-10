@@ -45,7 +45,22 @@ const Banner = () => {
 					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl animate-slide-up font-extrabold leading-tight mb-4">
 						The <br />
 						<span className="text-orange-600">Shire</span>
+						{""}
+						<br className="hidden md:block" />
+						<span className="text-yellow-500">Restaurant</span>
 					</h1>
+					<p className="text-sm lg:text-lg text-gray-600 mb-6">
+						Every meal will take you there and back again{""}
+						<br className="hidden md:block" />
+						with fast and free delivery
+					</p>
+					{/* Buttons */}
+					<div className="flex flex-wrap justify-center lg:justify-start gap-4">
+						<button className="bg-red-500 text-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-red-600 transition hover:scale-105 text-sm md:text-base cursor-pointer">
+							Get Started
+						</button>
+						<button></button>
+					</div>
 				</div>
 			</div>
 		</div>
