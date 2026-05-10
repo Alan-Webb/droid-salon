@@ -12,6 +12,10 @@ import bannersmall3 from "../assets/Bannersmall3.png";
 const Banner = () => {
 	const [showVideo, setShowVideo] = useState(false);
 
+	function handleShowVideo() {
+		setShowVideo(!showVideo);
+	}
+
 	return (
 		<div className="bg-white pt-12 md:pt-24 min-h-125 flex items-center">
 			{/* VIDEO MODAL */}
@@ -20,7 +24,7 @@ const Banner = () => {
 					<div className=" bg-orange-200 p-4 md:p-8 rounded-lg w-full max-w-4xl relative">
 						{/* Close Button */}
 						<button
-							onClick={() => setShowVideo(false)}
+							onClick={handleShowVideo}
 							className="absolute top-1 right-1 text-orange-500 text-4xl cursor-pointer">
 							<IoCloseCircle />
 						</button>
@@ -61,9 +65,9 @@ const Banner = () => {
 							Get Started
 						</button>
 						<button
-							onClick={() => setShowVideo(true)}
-							className="flex items-center gap-2 uppercase px-6 py-2 md:px-8 md:py-3 md:gap-3 border rounded-full hover:bg-gray-100 transition hover:scale-105 text-sm md:text-base cursor-pointer">
-							Play <FaPlay />
+							onClick={handleShowVideo}
+							className="px-4 border rounded-full hover:bg-gray-100 transition hover:scale-105 text-sm md:text-base cursor-pointer">
+							<FaPlay />
 						</button>
 					</div>
 				</div>
