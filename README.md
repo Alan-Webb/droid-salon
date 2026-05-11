@@ -1,6 +1,6 @@
-# the-shire
+# droid-salon
 
-Restaurant website
+Droid maintenance & upgrade website
 
 ## Built with
 
@@ -13,4 +13,4 @@ Alan Webb
 
 ## Refs
 
-- videos courtesy of mixkit
+- images courtesy of unsplash.com
