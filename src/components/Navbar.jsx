@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Logo from "../assets/logo.webp";
+import {Link} from "react-scroll";
 
 const Navbar = () => {
 	const [navShadow, setNavShadow] = useState(false);
@@ -19,7 +20,11 @@ const Navbar = () => {
 							</span>
 						</div>
 						{/* DESKTOP MENU */}
-						<div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-6 lg:space-x-10"></div>
+						<div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-6 lg:space-x-10">
+							<Link to="home" spy={true} smooth={true} className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+							
+							Home</Link>
+						</div>
 					</div>
 				</nav>
 			</div>
