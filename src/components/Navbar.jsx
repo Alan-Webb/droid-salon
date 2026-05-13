@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
-import {FaInfoCircle} from "react-icons/fa";
+import {FaCompactDisc, FaBarcode} from "react-icons/fa";
 import {MdMiscellaneousServices, MdPower} from "react-icons/md";
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
 								spy={true}
 								smooth={true}
 								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
-								<FaInfoCircle className="mr-1 lg:mr-2" />
+								<FaCompactDisc className="mr-1 lg:mr-2" />
 								About
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
 							</Link>
@@ -53,6 +53,19 @@ const Navbar = () => {
 								Services
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
 							</Link>
+						</div>
+						{/* BOOKING BUTTON */}
+						<div className="flex items-center space-x-4">
+							<div className="hidden md:block">
+								<Link
+									to="contact"
+									spy={true}
+									smooth={true}
+									className="flex items-center bg-pink-400 hover:bg-pink-600 text-white px-4 py-2 lg:px-6 rounded-lg hover:shadiw-lg hover:scale-105 transition-all duration-300 cursor-pointer font-semibold border border-pink-300 text-sm lg:text-base">
+									<FaBarcode className="mr-1 lg:mr-2" />
+									Book Now
+								</Link>
+							</div>
 						</div>
 					</div>
 				</nav>
