@@ -1,6 +1,8 @@
 import {useState} from "react";
 import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
+import {FaInfoCircle} from "react-icons/fa";
+import {MdMiscellaneousServices, MdPower} from "react-icons/md";
 
 const Navbar = () => {
 	const [navShadow, setNavShadow] = useState(false);
@@ -21,9 +23,36 @@ const Navbar = () => {
 						</div>
 						{/* DESKTOP MENU */}
 						<div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-6 lg:space-x-10">
-							<Link to="home" spy={true} smooth={true} className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
-							
-							Home</Link>
+							{/* Home */}
+							<Link
+								to="home"
+								spy={true}
+								smooth={true}
+								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								<MdPower className="mr-1 lg:mr-2" />
+								Home
+								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+							</Link>
+							{/* About */}
+							<Link
+								to="about"
+								spy={true}
+								smooth={true}
+								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								<FaInfoCircle className="mr-1 lg:mr-2" />
+								About
+								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+							</Link>
+							{/* Services */}
+							<Link
+								to="services"
+								spy={true}
+								smooth={true}
+								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								<MdMiscellaneousServices className="mr-1 lg:mr-2" />
+								Services
+								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+							</Link>
 						</div>
 					</div>
 				</nav>
