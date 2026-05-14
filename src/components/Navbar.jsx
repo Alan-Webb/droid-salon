@@ -3,9 +3,11 @@ import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
 import {FaCompactDisc, FaBarcode} from "react-icons/fa";
 import {MdMiscellaneousServices, MdPower} from "react-icons/md";
+import {GiHamburgerMenu} from "react-icons/gi";
 
 const Navbar = () => {
 	const [navShadow, setNavShadow] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
 		<div className="fixed w-full z-50 transition-all duration-500 ">
@@ -66,6 +68,12 @@ const Navbar = () => {
 									Book Now
 								</Link>
 							</div>
+							{/* MOBILE TOGGLE */}
+							<button
+								onClick={() => setIsMenuOpen(!isMenuOpen)}
+								className="md:hidden text-gray-600 hover:text-pink-700 transition-colors duration-300 p-2 cursor-pointer">
+								<GiHamburgerMenu />
+							</button>
 						</div>
 					</div>
 				</nav>
