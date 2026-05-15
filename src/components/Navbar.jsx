@@ -3,6 +3,7 @@ import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
 import {FaCompactDisc, FaBarcode} from "react-icons/fa";
 import {MdMiscellaneousServices, MdPower} from "react-icons/md";
+import {IoMdClose} from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
 
 const Navbar = () => {
@@ -72,7 +73,11 @@ const Navbar = () => {
 							<button
 								onClick={() => setIsMenuOpen(!isMenuOpen)}
 								className="md:hidden text-gray-600 hover:text-pink-700 transition-colors duration-300 p-2 cursor-pointer">
-								<GiHamburgerMenu />
+								{isMenuOpen ? (
+									<IoMdClose size={28} />
+								) : (
+									<GiHamburgerMenu size={28} />
+								)}
 							</button>
 						</div>
 					</div>
