@@ -3,7 +3,7 @@ import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
 import {FaCompactDisc, FaBarcode} from "react-icons/fa";
 import {MdMiscellaneousServices, MdPower} from "react-icons/md";
-import {IoMdClose} from "react-icons/io";
+import {FiX} from "react-icons/fi";
 import {GiHamburgerMenu} from "react-icons/gi";
 
 const Navbar = () => {
@@ -72,17 +72,48 @@ const Navbar = () => {
 							{/* MOBILE TOGGLE */}
 							<button
 								onClick={() => setIsMenuOpen(!isMenuOpen)}
-								className="md:hidden text-gray-600 hover:text-pink-700 transition-colors duration-300 p-2 cursor-pointer">
-								{isMenuOpen ? (
-									<IoMdClose size={28} />
-								) : (
-									<GiHamburgerMenu size={28} />
-								)}
+								className="md:hidden text-gray-800 hover:text-pink-700 transition-colors duration-300 p-2 cursor-pointer">
+								{isMenuOpen ? <FiX size={28} /> : <GiHamburgerMenu size={28} />}
 							</button>
 						</div>
 					</div>
 				</nav>
 			</div>
+			{/* MOBILE MENU */}
+			{isMenuOpen && (
+				<div className="flex flex-col items-center w-full md:hidden bg-pink-300/20 p-8 space-y-8 backdrop-blur-lg">
+					{/* Home */}
+					<Link
+						to="home"
+						spy={true}
+						smooth={true}
+						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-4xl">
+						<MdPower className="mr-1 lg:mr-2" />
+						Home
+						<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+					</Link>
+					{/* About */}
+					<Link
+						to="about"
+						spy={true}
+						smooth={true}
+						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-4xl">
+						<FaCompactDisc className="mr-1 lg:mr-2" />
+						About
+						<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+					</Link>
+					{/* Services */}
+					<Link
+						to="services"
+						spy={true}
+						smooth={true}
+						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-4xl">
+						<MdMiscellaneousServices className="mr-1 lg:mr-2" />
+						Services
+						<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+					</Link>
+				</div>
+			)}
 		</div>
 	);
 };
