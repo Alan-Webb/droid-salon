@@ -18,7 +18,7 @@ const Navbar = () => {
 						{/* LOGO */}
 						<div className="flex items-center space-x-2">
 							<img src={Logo} className="w-12 h-12" />
-							<span className="text-3xl md:text-4xl font-bold bg-linear-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent tracking-tighter cursor-pointer">
+							<span className="text-3xl md:text-4xl font-bold bg-linear-to-r from-gray-700 via-gray-800 to-gray-700 bg-clip-text text-transparent tracking-tighter cursor-pointer">
 								Droid Salon
 							</span>
 						</div>
@@ -29,7 +29,7 @@ const Navbar = () => {
 								to="home"
 								spy={true}
 								smooth={true}
-								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								className="flex items-center cursor-pointer uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-base lg:text-lg">
 								<MdPower className="mr-1 lg:mr-2" />
 								Home
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
@@ -39,7 +39,7 @@ const Navbar = () => {
 								to="about"
 								spy={true}
 								smooth={true}
-								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								className="flex items-center cursor-pointer uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-base lg:text-lg">
 								<FaCompactDisc className="mr-1 lg:mr-2" />
 								About
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
@@ -49,7 +49,7 @@ const Navbar = () => {
 								to="services"
 								spy={true}
 								smooth={true}
-								className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-base lg:text-lg">
+								className="flex items-center cursor-pointer uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-base lg:text-lg">
 								<MdMiscellaneousServices className="mr-1 lg:mr-2" />
 								Services
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
