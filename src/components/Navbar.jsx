@@ -62,7 +62,7 @@ const Navbar = () => {
 									to="contact"
 									spy={true}
 									smooth={true}
-									className="flex items-center bg-pink-400 hover:bg-pink-600 text-white px-4 py-2 lg:px-6 rounded-lg hover:shadiw-lg hover:scale-105 transition-all duration-300 cursor-pointer font-semibold border border-pink-300 text-sm lg:text-base">
+									className="flex items-center bg-gray-500 hover:bg-pink-600 text-white px-4 py-2 lg:px-6 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer font-semibold border border-pink-300 text-sm lg:text-base">
 									<FaBarcode className="mr-1 lg:mr-2" />
 									Book Now
 								</Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
 						to="home"
 						spy={true}
 						smooth={true}
-						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-3xl">
+						className="flex items-center cursor-pointer text-black uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-3xl">
 						<MdPower className="mr-1 lg:mr-2" />
 						Home
 					</Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
 						to="about"
 						spy={true}
 						smooth={true}
-						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-3xl">
+						className="flex items-center cursor-pointer text-black uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-3xl">
 						<FaCompactDisc className="mr-1 lg:mr-2" />
 						About
 					</Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
 						to="services"
 						spy={true}
 						smooth={true}
-						className="flex items-center cursor-pointer text-gray-800 hover:text-pink-700 transition-all duration-300 relative group font-medium text-3xl">
+						className="flex items-center cursor-pointer text-black uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-3xl">
 						<MdMiscellaneousServices className="mr-1 lg:mr-2" />
 						Services
 					</Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
 						spy={true}
 						smooth={true}
 						onClick={() => setIsMenuOpen(false)}
-						className="flex items-center bg-pink-400 hover:bg-pink-500 text-white px-8 py-4 rounded-xl transition-all duration-300 font-semibold text-lg cursor-pointer">
+						className="flex items-center bg-gray-600 hover:bg-pink-500 text-white px-8 py-4 rounded-xl transition-all duration-300 font-semibold text-lg cursor-pointer">
 						<FaBarcode className="mr-4 text-2xl" />
 						Book Now
 					</Link>
