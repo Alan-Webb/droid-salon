@@ -1,8 +1,9 @@
 import {useState} from "react";
 import Logo from "../assets/logo.webp";
 import {Link} from "react-scroll";
-import {FaCompactDisc, FaBarcode} from "react-icons/fa";
-import {MdMiscellaneousServices, MdPower} from "react-icons/md";
+import {MdHomeFilled} from "react-icons/md";
+import {FaInfoCircle, FaCalendarAlt} from "react-icons/fa";
+import {MdMiscellaneousServices} from "react-icons/md";
 import {FiX} from "react-icons/fi";
 import {GiHamburgerMenu} from "react-icons/gi";
 
@@ -30,7 +31,7 @@ const Navbar = () => {
 								spy={true}
 								smooth={true}
 								className="flex items-center cursor-pointer uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-base lg:text-lg">
-								<MdPower className="mr-1 lg:mr-2" />
+								<MdHomeFilled className="mr-1 lg:mr-2" />
 								Home
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
 							</Link>
@@ -40,7 +41,7 @@ const Navbar = () => {
 								spy={true}
 								smooth={true}
 								className="flex items-center cursor-pointer uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-base lg:text-lg">
-								<FaCompactDisc className="mr-1 lg:mr-2" />
+								<FaInfoCircle className="mr-1 lg:mr-2" />
 								About
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
 							</Link>
@@ -63,7 +64,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									className="flex items-center bg-amber-600 hover:bg-amber-500 text-white uppercase px-6 py-2 rounded-xl transition-all duration-300 font-semibold text-lg cursor-pointer">
-									<FaBarcode className="mr-1 lg:mr-2" />
+									<FaCalendarAlt className="mr-1 lg:mr-2" />
 									Book Now
 								</Link>
 							</div>
@@ -86,7 +87,7 @@ const Navbar = () => {
 						spy={true}
 						smooth={true}
 						className="flex items-center cursor-pointer text-black uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-3xl">
-						<MdPower className="mr-1 lg:mr-2" />
+						<MdHomeFilled className="mr-1 lg:mr-2" />
 						Home
 					</Link>
 					{/* About */}
@@ -95,7 +96,7 @@ const Navbar = () => {
 						spy={true}
 						smooth={true}
 						className="flex items-center cursor-pointer text-black uppercase hover:text-gray-600 transition-all duration-300 relative group font-medium text-3xl">
-						<FaCompactDisc className="mr-1 lg:mr-2" />
+						<FaInfoCircle className="mr-1 lg:mr-2" />
 						About
 					</Link>
 					{/* Services */}
@@ -114,7 +115,7 @@ const Navbar = () => {
 						smooth={true}
 						onClick={() => setIsMenuOpen(false)}
 						className="flex items-center bg-amber-600 hover:bg-amber-400 text-white px-8 py-4 rounded-xl transition-all duration-300 font-semibold text-lg cursor-pointer">
-						<FaBarcode className="mr-4 text-2xl" />
+						<FaCalendarAlt className="mr-4 text-2xl" />
 						Book Now
 					</Link>
 				</div>
