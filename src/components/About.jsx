@@ -10,23 +10,26 @@ import aboutImg from "../assets/aboutImg.webp";
 const features = [
 	{
 		icon: <GiLightningSpanner className="w-8 h-8" />,
-		title: "Performance Upgrades",
-		desc: "Faster processors, expanded memory, enhanced mobility systems, and improved response times",
+		title: "Ability Upgrades",
+		description:
+			"Faster processors, expanded memory, enhanced mobility systems.",
 	},
 	{
 		icon: <MdSensors className="w-8 h-8" />,
-		title: "Sensor Calibration",
-		desc: "Fine-tuning visual, audio, navigation, and proximity sensors for peak accuracy",
+		title: "Sense Calibration",
+		description:
+			"Fine-tuning visual, audio and navigation for optimum accuracy.",
 	},
 	{
 		icon: <MdOutlineRecordVoiceOver className="w-8 h-8" />,
-		title: "Voice & Personality Tuning",
-		desc: "Refine speech patterns, install new voice packs, or recalibrate personality modules",
+		title: "Charisma Tuning",
+		description: "Refine speech patterns or recalibrate personality modules.",
 	},
 	{
 		icon: <MdOutlineSecurity className="w-8 h-8" />,
-		title: "Software Updates & Security Patching",
-		desc: "Firmware upgrades, bug fixes, firewall protection, and malware removal",
+		title: "Security Patching",
+		description:
+			"Firmware upgrades, bug fixes, firewall protection, and malware removal",
 	},
 ];
 
@@ -61,6 +64,38 @@ const About = () => {
 									Award Winning Salon
 								</span>
 							</div>
+						</div>
+						{/* Heading & Paragraph*/}
+						<h2 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-red-600 to-rose-500 bg-clip-text text-transparent">
+							Precision Care for Every Circuit
+						</h2>
+						<p className="text-lg text-gray-600 leading-relaxed">
+							At Droid Salon we provide reliable service and custom enhancements
+							built around performance, longevity, and innovation.
+						</p>
+						{/* FEATURE GRID */}
+						<div className="grid grid-cols-1 sm:grid-cols-2">
+							{features.map((feature, index) => (
+								<div
+									key={index}
+									className="p-2 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 group m-1">
+									<div className="flex items-center space-x-4">
+										<div className="p-3 bg-rose-50 rounded-xl group-hover:bg-rose-100 transition-colors">
+											{/* Icon */}
+											<span className="text-rose-500">{feature.icon}</span>
+										</div>
+										{/* Title & Text */}
+										<div>
+											<h3 className="text-lg font-semibold text-gray-800">
+												{feature.title}
+											</h3>
+											<p className="text-sm text-gray-500">
+												{feature.description}
+											</p>
+										</div>
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
