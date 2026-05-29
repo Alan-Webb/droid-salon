@@ -110,6 +110,33 @@ const Services = () => {
 					<h2 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-red-600 to-rose-500 bg-clip-text text-transparent mb-4">
 						Our Services
 					</h2>
+					<p className="text-amber-800 max-w-2xl mx-auto text-xl font-medium">
+						Our comprehensive range of maintenance, repair, and upgrade
+						services.
+					</p>
+				</div>
+				{/* SERVICES DESCRIPTIONS GRID */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{showAll
+						? services
+						: services.splice(0, 6).map((service) => (
+								<div
+									key={service.id}
+									className="group relative bg-[#fff9e6] rounded-2xl shadow-xl border-2 border-amber-100 overflow-hidden transition-all duration-300 hover:border-amber-200 hover:shadow-2xl hover:-translate-y-2">
+									<div className="relative h-72 overflow-hidden">
+										{/* Icon */}
+										<div className="absolute top-4 right-4 z-10 bg-white/30 backdrop-blur-sm p-2 rounded-full">
+											{service.icon}
+										</div>
+										{/* Image */}
+										<img
+											src={service.image}
+											alt={service.title}
+											className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+										/>
+									</div>
+								</div>
+							))}
 				</div>
 			</div>
 		</section>
