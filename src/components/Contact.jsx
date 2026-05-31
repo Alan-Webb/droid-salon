@@ -1,8 +1,22 @@
-import {useCallback, useState} from "react";
+import {useCallback, useState, useMemo} from "react";
+import {
+	FiUser,
+	FiPhone,
+	FiCalendar,
+	FiClock,
+	FiCheck,
+	FiInfo,
+	FiX,
+} from "react-icons/fi";
 
 const Contact = () => {
 	const [error, setError] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [name, setName] = useState("");
+	const [phone, setPhone] = useState("");
+	const [selectedServices, setSelectedServices] = useState("");
+	const [date, setDate] = useState("");
+	const [time, setTime] = useState("");
 
 	const validateForm = useCallback(() => {
 		const errors = {};
@@ -28,6 +42,22 @@ const Contact = () => {
 		setIsSubmitting(true);
 	});
 
+	const services = useMemo(
+		() => [
+			"Servo Joint Calibration",
+			"Neural Processor Upgrade",
+			"Armor Plating Repair",
+			"Optical Sensor Tuning",
+			"Combat Mode Enhancement",
+			"Custom LED Installation",
+			"Dexterity Upgrade",
+			"Firmware Security Update",
+			"Cooling System Optimization",
+			"Others",
+		],
+		[],
+	);
+
 	return (
 		<section
 			id="contact"
@@ -43,9 +73,23 @@ const Contact = () => {
 					</p>
 				</div>
 				{/* CONTACT FORM */}
-				<form typeof="submit" onClick={handleSubmit} className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border-2 border-amber-500">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"></div>
-        </form>
+				<form
+					typeof="submit"
+					onClick={handleSubmit}
+					className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border-2 border-amber-500">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+						{/* Name */}
+						<div className="relative group">
+							<FiUser className="absolute left-4 top-4 text-yellow-400 text-xl" />
+							<input
+								type="text"
+								placeholder="Your name"
+								value={name}
+								onChange={(e) => set}
+							/>
+						</div>
+					</div>
+				</form>
 			</div>
 		</section>
 	);
