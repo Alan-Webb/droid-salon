@@ -117,6 +117,7 @@ const Services = () => {
 			className="py-20 bg-linear-to-b from-[#fceedd] to-[#f9eab8]">
 			<div className="container mx-auto px-4 md:px-6 lg:px-8">
 				<div className="text-center mb-16">
+					{/* HEADING & TAGLINE */}
 					<h2 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-red-600 to-rose-500 bg-clip-text text-transparent mb-4">
 						Our Services
 					</h2>
