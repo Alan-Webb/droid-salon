@@ -10,7 +10,7 @@ import {
 } from "react-icons/fi";
 
 const Contact = () => {
-	const [error, setError] = useState({});
+	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [name, setName] = useState("");
 	const [phone, setPhone] = useState("");
@@ -35,10 +35,10 @@ const Contact = () => {
 		e.preventDefault();
 		const validateErrors = validateForm();
 		if (Object.keys(validateErrors).length) {
-			setError(validateErrors);
+			setErrors(validateErrors);
 			return;
 		}
-		setError({});
+		setErrors({});
 		setIsSubmitting(true);
 	});
 
@@ -85,8 +85,36 @@ const Contact = () => {
 								type="text"
 								placeholder="Your name"
 								value={name}
-								onChange={(e) => set}
+								onChange={(e) => setName(e.target.value)}
+								className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-yellow-100 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all duration-300 placeholder-yellow-300 text-yellow-700 font-medium"
+								autoFocus
 							/>
+							{errors.name && (
+								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
+									{errors.name}
+								</p>
+							)}
+						</div>
+						{/* Phone */}
+						<div className="relative group">
+							<FiPhone className="absolute left-4 top-4 text-yellow-400 text-xl" />
+							<input
+								type="tel"
+								placeholder="Your telephone number"
+								value={phone}
+								onChange={(e) =>
+									setPhone(e.target.value.replace(/\D/g, "").slice(0, 11))
+								}
+								className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-yellow-100 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all duration-300 placeholder-yellow-300 text-yellow-700 font-medium"
+								autoFocus
+							/>
+							{errors.phone && (
+								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
+									{errors.phone}
+								</p>
+							)}
 						</div>
 					</div>
 				</form>
