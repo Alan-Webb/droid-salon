@@ -47,7 +47,13 @@ const Contact = () => {
 		return errors;
 	}, [name, phone, selectedServices, date, time]);
 
-	const toggleServices = useCallback((service) => {});
+	const toggleService = useCallback((service) => {
+		setSelectedServices((prev) =>
+			prev.includes(service)
+				? prev.filter((s) => s !== service)
+				: [...prev, service],
+		);
+	}, []);
 
 	const handleSubmit = useCallback((e) => {
 		e.preventDefault();
@@ -132,11 +138,14 @@ const Contact = () => {
 										<span>{service}</span>
 										<button
 											type="button"
-											onClick={() => toggleServices()}
-											className=""></button>
+											onClick={() => toggleService(service)}
+											className="ml-2 hover:text-yellow-900">
+											<FiX className="w-4 h-4" />
+										</button>
 									</div>
 								))}
 							</div>
+							{/* Services Grid */}
 						</div>
 					</div>
 				</form>
