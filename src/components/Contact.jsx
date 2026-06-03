@@ -131,37 +131,18 @@ const Contact = () => {
 							</label>
 							{/* Services Tags */}
 							<div className="flex flex-wrap gap-2 mb-4">
-								{selectedServices.localeCompare((service) => (
+								{services.map((service) => (
 									<div
 										key={service}
-										className="flex items-center bg-yellow-100 rounded-full px-4 py-2 text-sm text-yellow-700 font-medium hover:bg-yellow-200 transition-all">
+										className="flex items-center bg-yellow-100 rounded-full px-4 py-2 text-sm text-yellow-700 font-medium transition-all hover:bg-yellow-200">
 										<span>{service}</span>
 										<button
 											type="button"
-											onClick={() => toggleService(service)}
-											className="ml-2 hover:text-yellow-900">
-											<FiX className="w-4 h-4" />
-										</button>
+											onClick={() => toggleService(service)}></button>
 									</div>
 								))}
 							</div>
 							{/* Services Grid Options */}
-							<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
-								{services.map((service) => (
-									<div
-										key={service}
-										onClick={() => toggleService(service)}
-										className={`flex items-center p-4 rounded-xl cursor-pointer transition-all${selectedServices.includes(service) ? "bg-yellow-500 text-white shadow-lg" : "bg-yellow-50 hover:bg-yellow-100 border-2 border-yellow-100"}`}>
-										<div
-											className={`flex shrink-0 w-6 h-6 rounded-md items-center justify-center ${selectedServices.includes(service) ? "bg-white text-yellow-500" : "bg-yellow-200 text-transparent"}`}>
-											<FiCheck className="w-4 h-4" />
-											<span className="ml-3 text-sm font-medium">
-												{service}
-											</span>
-										</div>
-									</div>
-								))}
-							</div>
 						</div>
 					</div>
 				</form>
