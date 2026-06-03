@@ -138,11 +138,31 @@ const Contact = () => {
 										<span>{service}</span>
 										<button
 											type="button"
-											onClick={() => toggleService(service)}></button>
+											onClick={() => toggleService(service)}
+											className="ml-2 hover:text-yellow-900">
+											<FiX className="w-4 h-4" />
+										</button>
 									</div>
 								))}
 							</div>
 							{/* Services Grid Options */}
+							<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+								{services.map((service) => (
+									<div
+										key={service}
+										onClick={() => toggleService(service)}
+										className={`flex items-center p-4 rounded-xl cursor-pointer transition-all ${selectedServices.includes(service) ? "bg-yellow-500 text-white shadow-lg" : "bg-yellow-50 hover:bg-yellow-100 border-2 border-yellow-100"}`}>
+										<div
+											className={`flex shrink-0 items-center justify-center w-6 h-6 rounded-md ${selectedServices.includes(service) ? "bg-white text-yellow-500" : "bg-yellow-200 text-transparent"}`}>
+											<FiCheck className="w-4 h-4" />
+										</div>
+										<span className="ml-3 text-sm font-medium">{service}</span>
+									</div>
+								))}
+							</div>
+							{errors.services && (
+								<p className="text-red-400 text-sm mt-2">{errors.services}</p>
+							)}
 						</div>
 					</div>
 				</form>
