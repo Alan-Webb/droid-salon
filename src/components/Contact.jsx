@@ -29,7 +29,7 @@ const Contact = () => {
 			"Dexterity Upgrade",
 			"Firmware Security Update",
 			"Cooling System Optimization",
-			"Others",
+			"Other",
 		],
 		[],
 	);
@@ -140,7 +140,7 @@ const Contact = () => {
 											type="button"
 											onClick={() => toggleService(service)}
 											className="ml-2 hover:text-yellow-900">
-											<FiX className="w-4 h-4" />
+											<FiX className="w-4 h-4 cursor-pointer" />
 										</button>
 									</div>
 								))}
