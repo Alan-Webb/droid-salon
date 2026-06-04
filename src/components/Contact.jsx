@@ -14,7 +14,7 @@ const Contact = () => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [name, setName] = useState("");
 	const [phone, setPhone] = useState("");
-	const [selectedServices, setSelectedServices] = useState("");
+	const [selectedServices, setSelectedServices] = useState([]);
 	const [date, setDate] = useState("");
 	const [time, setTime] = useState("");
 
@@ -131,7 +131,7 @@ const Contact = () => {
 							</label>
 							{/* Services Tags */}
 							<div className="flex flex-wrap gap-2 mb-4">
-								{services.map((service) => (
+								{selectedServices.map((service) => (
 									<div
 										key={service}
 										className="flex items-center bg-yellow-100 rounded-full px-4 py-2 text-sm text-yellow-700 font-medium transition-all hover:bg-yellow-200">
