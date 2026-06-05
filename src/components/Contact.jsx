@@ -164,6 +164,24 @@ const Contact = () => {
 								<p className="text-red-400 text-sm mt-2">{errors.services}</p>
 							)}
 						</div>
+						{/* Date */}
+						<div className="relative group">
+							<FiUser className="absolute left-4 top-4 text-yellow-400 text-xl" />
+							<input
+								type="text"
+								placeholder="Your name"
+								value={name}
+								onChange={(e) => setName(e.target.value)}
+								className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-yellow-100 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all duration-300 placeholder-yellow-300 text-yellow-700 font-medium"
+								autoFocus
+							/>
+							{errors.name && (
+								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
+									{errors.name}
+								</p>
+							)}
+						</div>
 					</div>
 				</form>
 			</div>
