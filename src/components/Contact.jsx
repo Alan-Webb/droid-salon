@@ -177,6 +177,22 @@ const Contact = () => {
 								</p>
 							)}
 						</div>
+						{/* Time */}
+						<div className="relative group">
+							<FiClock className="absolute left-4 top-4 text-yellow-400 text-xl" />
+							<input
+								type="time"
+								value={time}
+								onChange={(e) => setTime(e.target.value)}
+								className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-yellow-100 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 transition-all duration-300 placeholder-yellow-300 text-yellow-700 font-medium"
+							/>
+							{errors.time && (
+								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									{errors.time}
+								</p>
+							)}
+						</div>
+						{/* Update error icons */}
 					</div>
 				</form>
 			</div>
