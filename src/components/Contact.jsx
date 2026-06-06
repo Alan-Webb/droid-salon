@@ -192,8 +192,9 @@ const Contact = () => {
 								</p>
 							)}
 						</div>
-						{/* Update error icons */}
 					</div>
+					{/* SUBMIT BUTTON */}
+					<button></button>
 				</form>
 			</div>
 		</section>
