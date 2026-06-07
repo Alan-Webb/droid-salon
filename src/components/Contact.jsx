@@ -194,7 +194,7 @@ const Contact = () => {
 						</div>
 					</div>
 					{/* SUBMIT BUTTON */}
-					<button></button>
+					<button type="submit" disabled={isSubmitting}></button>
 				</form>
 			</div>
 		</section>
