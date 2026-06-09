@@ -197,8 +197,8 @@ const Contact = () => {
 					<button
 						type="submit"
 						disabled={isSubmitting}
-						className={`w-full mt-6 sm:mt-8 bg-linear-to-br from-yellow-400 to-yellow-600 text-white py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:shadow-yellow-200 hover:scale-[1.02] transition-all duration-300 cursor-pointer ${isSubmitting ? "opacity-80 cursor-not-allowed" : ""}`}>
-						{isSubmitting ? "Scheduling" : "Submit"}
+						className={`w-full mt-6 sm:mt-8 bg-linear-to-br from-yellow-400 to-yellow-600 text-white uppercase py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:shadow-yellow-200 hover:scale-[1.02] transition-all duration-300 cursor-pointer ${isSubmitting ? "opacity-80 cursor-not-allowed" : ""}`}>
+						{isSubmitting ? "Scheduling Appointment..." : "Confirm Booking"}
 					</button>
 				</form>
 			</div>
