@@ -64,6 +64,8 @@ const Contact = () => {
 		}
 		setErrors({});
 		setIsSubmitting(true);
+
+		const message = `Name: ${name}%0APhone: ${phone}%0AServices: ${selectedServices.join(", ")}%0ADate: ${date}%0ATime: ${time}`;
 	});
 
 	return (
