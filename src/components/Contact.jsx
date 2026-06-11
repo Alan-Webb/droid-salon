@@ -55,7 +55,7 @@ const Contact = () => {
 		);
 	}, []);
 
-	const handleSubmit = useCallback((e) => {
+	function handleSubmit(e) {
 		e.preventDefault();
 		const validateErrors = validateForm();
 		if (Object.keys(validateErrors).length) {
@@ -64,7 +64,7 @@ const Contact = () => {
 		}
 		setErrors({});
 		setIsSubmitting(true);
-	});
+	}
 
 	return (
 		<section
@@ -83,7 +83,7 @@ const Contact = () => {
 				{/* CONTACT FORM */}
 				<form
 					typeof="submit"
-					onClick={handleSubmit}
+					onSubmit={handleSubmit}
 					className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border-2 border-amber-500">
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
 						{/* Name */}
@@ -118,6 +118,7 @@ const Contact = () => {
 							/>
 							{errors.phone && (
 								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
 									{errors.phone}
 								</p>
 							)}
@@ -159,7 +160,10 @@ const Contact = () => {
 								))}
 							</div>
 							{errors.services && (
-								<p className="text-red-400 text-sm mt-2">{errors.services}</p>
+								<p className="text-red-400 text-sm mt-2">
+									<FiInfo className="inline me-2" />
+									{errors.services}
+								</p>
 							)}
 						</div>
 						{/* Date */}
@@ -173,6 +177,7 @@ const Contact = () => {
 							/>
 							{errors.date && (
 								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
 									{errors.date}
 								</p>
 							)}
@@ -188,6 +193,7 @@ const Contact = () => {
 							/>
 							{errors.time && (
 								<p className="text-red-500 text-sm mt-2 flex items-center gap-2">
+									<FiInfo className="inline" />
 									{errors.time}
 								</p>
 							)}
