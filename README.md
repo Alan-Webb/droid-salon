@@ -1,6 +1,6 @@
-# droid-salon
+# droid-medic
 
-Droid maintenance & upgrade website
+Droid repair and upgrade website
 
 ## Built with
 
@@ -10,7 +10,3 @@ Droid maintenance & upgrade website
 ## Author
 
 Alan Webb
-
-## Refs
-
-- images courtesy of unsplash.com
