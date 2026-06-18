@@ -1,4 +1,4 @@
-# droid-medic
+# droid-salon
 
 Droid repair and upgrade website
 
