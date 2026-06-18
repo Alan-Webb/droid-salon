@@ -6,7 +6,7 @@ import {FaChevronDown} from "react-icons/fa";
 const Navbar = () => {
 	return (
 		<div className="bg-stone-300 border-b border-amber-600">
-			<div className="flex justify-between items-center max-w-7xl mx-auto">
+			<div className="flex justify-between items-center max-w-7xl mx-auto py-2">
 				<div>
 					{/* LOGO */}
 					<div>
@@ -31,7 +31,7 @@ const Navbar = () => {
 						</div>
 					</div>
 					{/* LINKS */}
-					<div className="flex space-x-4 border-t border-amber-500 py-2">
+					<div className="hidden lg:flex space-x-4 border-t border-amber-500 py-2">
 						{/* Home */}
 						<a href="" className="font-medium px-4">
 							Home
