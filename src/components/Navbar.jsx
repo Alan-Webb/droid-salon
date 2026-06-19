@@ -2,31 +2,38 @@ import logo from "../assets/logo.webp";
 import {MdEmail} from "react-icons/md";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import {FaChevronDown} from "react-icons/fa";
-import {VscThreeBars} from "react-icons/vsc";
+import {VscThreeBars, VscChromeClose} from "react-icons/vsc";
+import {useState} from "react";
 
 const Navbar = () => {
+	const [mobileMenu, setMobileMenu] = useState(false);
+
 	return (
 		<div className="bg-stone-300 border-b border-amber-600">
-			<div className="flex justify-between items-center max-w-7xl mx-auto py-2">
+			<div className="flex justify-between items-center max-w-7xl mx-auto py-2 px-4 lg:px-0">
 				<div>
 					{/* LOGO */}
-					<div>
+					<div className="flex">
 						<img
 							src={logo}
 							alt="Droid Salon Logo"
-							className="w-20 h-20 m-2 rounded-full bg-amber-600 border-2 border-stone-400"
+							className="w-12 lg:w-20 h-12 lg:h-20 m-2 rounded-full bg-amber-600 border-2 border-stone-400"
 						/>
+						<div className="flex flex-col mt-2 lg:mt-4 ms-2 lg:text-3xl font-bold text-amber-700">
+							<span>Droid</span>
+							<span>Salon</span>
+						</div>
 					</div>
 				</div>
 				{/* NAVIGATION */}
 				<div className="flex flex-col">
 					{/* Contact Details */}
-					<div className="flex justify-end pb-2">
+					<div className="flex flex-col lg:flex-row space-y-1 justify-end me-12 lg:me-4">
 						<div className="flex space-x-2 items-center">
 							<MdEmail className="text-amber-600" />
 							<span>info@droidsalon.co.uk</span>
 						</div>
-						<div className="flex space-x-2 items-center ml-8">
+						<div className="flex space-x-2 items-center ml-6">
 							<BsFillTelephoneFill className="text-amber-600" />
 							<span>01218 184 514</span>
 						</div>
@@ -34,14 +41,14 @@ const Navbar = () => {
 					{/* LINKS */}
 					<div className="hidden lg:flex space-x-4 border-t border-amber-500 py-2">
 						{/* Home */}
-						<a href="" className="font-medium px-4">
+						<a href="" className="font-medium px-4 hover:text-amber-700">
 							Home
 						</a>
 						{/* Services */}
 						<div className="group">
 							<a
 								href=""
-								className="flex items-center space-x-1  font-medium px-4">
+								className="flex items-center space-x-1  font-medium px-4 hover:text-amber-700">
 								<span>Services</span>
 								<FaChevronDown className="text-xs" />
 							</a>
@@ -61,7 +68,7 @@ const Navbar = () => {
 						<div className="group">
 							<a
 								href=""
-								className="flex items-center space-x-1 font-medium px-4">
+								className="flex items-center space-x-1 font-medium px-4 hover:text-amber-700">
 								<span>Industries</span>
 								<FaChevronDown className="text-xs" />
 							</a>
@@ -81,7 +88,7 @@ const Navbar = () => {
 						<div className="group">
 							<a
 								href=""
-								className="flex items-center space-x-1  font-medium px-4">
+								className="flex items-center space-x-1  font-medium px-4 hover:text-amber-700">
 								<span>Locations</span>
 								<FaChevronDown className="text-xs" />
 							</a>
@@ -98,26 +105,28 @@ const Navbar = () => {
 							</div>
 						</div>
 						{/* Careers */}
-						<a href="" className="font-medium px-4">
+						<a href="" className="font-medium px-4 hover:text-amber-700">
 							Careers
 						</a>
 						{/* Contact */}
-						<a href="" className="font-medium px-4">
+						<a href="" className="font-medium px-4 hover:text-amber-700">
 							Contact
 						</a>
 						{/* About */}
-						<a href="" className="font-medium px-4">
+						<a href="" className="font-medium px-4 hover:text-amber-700">
 							About
 						</a>
 					</div>
 				</div>
-				{/* QUOTE BUTTON */}
+				{/*BUTTONS */}
 				<div>
+					{/* Quote Btn */}
 					<button className="hidden lg:block px-5 py-2 m-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 cursor-pointer">
 						Get A Quote
 					</button>
-					<button>
-						<VscThreeBars />
+					{/* Hamburger Btn */}
+					<button onClick={() => setMobileMenu(!mobileMenu)}>
+						{mobileMenu ? <VscChromeClose /> : <VscThreeBars />}
 					</button>
 				</div>
 			</div>
