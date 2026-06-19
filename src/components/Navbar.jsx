@@ -2,6 +2,7 @@ import logo from "../assets/logo.webp";
 import {MdEmail} from "react-icons/md";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import {FaChevronDown} from "react-icons/fa";
+import {VscThreeBars} from "react-icons/vsc";
 
 const Navbar = () => {
 	return (
@@ -27,7 +28,7 @@ const Navbar = () => {
 						</div>
 						<div className="flex space-x-2 items-center ml-8">
 							<BsFillTelephoneFill className="text-amber-600" />
-							<span>0121 184 5143</span>
+							<span>01218 184 514</span>
 						</div>
 					</div>
 					{/* LINKS */}
@@ -112,8 +113,11 @@ const Navbar = () => {
 				</div>
 				{/* QUOTE BUTTON */}
 				<div>
-					<button className="px-5 py-2 m-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 cursor-pointer">
+					<button className="hidden lg:block px-5 py-2 m-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 cursor-pointer">
 						Get A Quote
+					</button>
+					<button>
+						<VscThreeBars />
 					</button>
 				</div>
 			</div>
