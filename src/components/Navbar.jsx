@@ -26,7 +26,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				{/* NAVIGATION */}
-				<div className="flex flex-col">
+				<nav className="flex flex-col">
 					{/* Contact Details */}
 					<div className="flex flex-col lg:flex-row space-y-1 justify-end me-12 lg:me-4">
 						<div className="flex space-x-2 items-center">
@@ -117,7 +117,7 @@ const Navbar = () => {
 							About
 						</a>
 					</div>
-				</div>
+				</nav>
 				{/*BUTTONS */}
 				<div>
 					{/* Quote Btn */}
@@ -125,11 +125,22 @@ const Navbar = () => {
 						Get A Quote
 					</button>
 					{/* Hamburger Btn */}
-					<button onClick={() => setMobileMenu(!mobileMenu)}>
+					<button
+						onClick={() => setMobileMenu(!mobileMenu)}
+						className="lg:hidden text-3xl hover:text-amber-700 cursor-pointer">
 						{mobileMenu ? <VscChromeClose /> : <VscThreeBars />}
 					</button>
 				</div>
 			</div>
+			{/* MOBILE MENU */}
+			{mobileMenu && (
+				<nav>
+					<div>
+						<a href="">Home</a>
+						<div>Services</div>
+					</div>
+				</nav>
+			)}
 		</div>
 	);
 };
