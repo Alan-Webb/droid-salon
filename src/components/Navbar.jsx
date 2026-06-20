@@ -134,10 +134,15 @@ const Navbar = () => {
 			</div>
 			{/* MOBILE MENU */}
 			{mobileMenu && (
-				<nav>
-					<div>
+				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
+					<div className="flex flex-col items-center py-3 text-4xl space-y-2 max-h-[80vh]">
 						<a href="">Home</a>
-						<div>Services</div>
+						<a href="">Services</a>
+						<a href="">Industries</a>
+						<a href="">Locations</a>
+						<a href="">Careers</a>
+						<a href="">Contact</a>
+						<a href="">About</a>
 					</div>
 				</nav>
 			)}
