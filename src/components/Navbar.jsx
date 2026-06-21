@@ -7,6 +7,9 @@ import {useState} from "react";
 
 const Navbar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
+	const [servicesDropdown, setServicesDropdown] = useState(false);
+	const [industriesDropdown, setIndustriesDropdown] = useState(false);
+	const [locationsDropdown, setLocationsDropdown] = useState(false);
 
 	return (
 		<div className="bg-stone-300 border-b border-amber-600">
@@ -137,9 +140,9 @@ const Navbar = () => {
 				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
 					<div className="flex flex-col items-center py-3 text-4xl space-y-2 max-h-[80vh]">
 						<a href="">Home</a>
-						<a href="">Services</a>
-						<a href="">Industries</a>
-						<a href="">Locations</a>
+						<div>Services</div>
+						<div>Industries</div>
+						<div>Locations</div>
 						<a href="">Careers</a>
 						<a href="">Contact</a>
 						<a href="">About</a>
