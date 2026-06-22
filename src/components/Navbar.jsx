@@ -146,11 +146,19 @@ const Navbar = () => {
 							<button onClick={() => setServicesDropdown(!servicesDropdown)}>
 								Services
 							</button>
-							{servicesDropdown && <div>
-								<a href="" className="pl-4">Combat Upgrades</a>
-								<a href="" className="pl-4">Ability Tuning</a>
-								<a href="" className="pl-4">Mobile Services</a>
-								</div>}
+							{servicesDropdown && (
+								<div>
+									<a href="" className="pl-4">
+										Combat Upgrades
+									</a>
+									<a href="" className="pl-4">
+										Ability Tuning
+									</a>
+									<a href="" className="pl-4">
+										Mobile Services
+									</a>
+								</div>
+							)}
 						</div>
 						{/* Industries */}
 						<div>
@@ -158,12 +166,38 @@ const Navbar = () => {
 								onClick={() => setIndustriesDropdown(!industriesDropdown)}>
 								Industries
 							</button>
+							{industriesDropdown && (
+								<div>
+									<a href="" className="pl-4">
+										Private
+									</a>
+									<a href="" className="pl-4">
+										Commercial
+									</a>
+									<a href="" className="pl-4">
+										Military
+									</a>
+								</div>
+							)}
 						</div>
 						{/* Locations */}
 						<div>
 							<button onClick={() => setLocationsDropdown(!locationsDropdown)}>
 								Locations
 							</button>
+							{locationsDropdown && (
+								<div>
+									<a href="" className="pl-4">
+										London
+									</a>
+									<a href="" className="pl-4">
+										Tokyo
+									</a>
+									<a href="" className="pl-4">
+										New York
+									</a>
+								</div>
+							)}
 						</div>
 						{/* Careers */}
 						<a href="">Careers</a>
