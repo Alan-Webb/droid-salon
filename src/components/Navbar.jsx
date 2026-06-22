@@ -139,12 +139,37 @@ const Navbar = () => {
 			{mobileMenu && (
 				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
 					<div className="flex flex-col items-center py-3 text-4xl space-y-2 max-h-[80vh]">
+						{/* Home */}
 						<a href="">Home</a>
-						<div>Services</div>
-						<div>Industries</div>
-						<div>Locations</div>
+						{/* Services */}
+						<div>
+							<button onClick={() => setServicesDropdown(!servicesDropdown)}>
+								Services
+							</button>
+							{servicesDropdown && <div>
+								<a href="" className="pl-4">Combat Upgrades</a>
+								<a href="" className="pl-4">Ability Tuning</a>
+								<a href="" className="pl-4">Mobile Services</a>
+								</div>}
+						</div>
+						{/* Industries */}
+						<div>
+							<button
+								onClick={() => setIndustriesDropdown(!industriesDropdown)}>
+								Industries
+							</button>
+						</div>
+						{/* Locations */}
+						<div>
+							<button onClick={() => setLocationsDropdown(!locationsDropdown)}>
+								Locations
+							</button>
+						</div>
+						{/* Careers */}
 						<a href="">Careers</a>
+						{/* Contact */}
 						<a href="">Contact</a>
+						{/* About */}
 						<a href="">About</a>
 					</div>
 				</nav>
