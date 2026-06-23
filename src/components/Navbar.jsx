@@ -138,26 +138,28 @@ const Navbar = () => {
 			{/* MOBILE MENU */}
 			{mobileMenu && (
 				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
-					<div className="flex flex-col items-center py-3 text-4xl space-y-2 max-h-[80vh]">
+					<div className="flex flex-col py-8 text-4xl space-y-2 min-h-[60vh] pl-12 font-medium">
 						{/* Home */}
-						<a href="">Home</a>
+						<a href="" className="hover:text-amber-700">
+							Home
+						</a>
 						{/* Services */}
 						<div>
 							<button
 								onClick={() => setServicesDropdown(!servicesDropdown)}
 								className="flex items-center">
 								<span>Services</span>
-								<FaChevronDown className="text-sm ml-2 cursor-pointer" />
+								<FaChevronDown className="text-xl ml-2 hover:text-amber-700 cursor-pointer" />
 							</button>
 							{servicesDropdown && (
-								<div className="flex flex-col items-center">
-									<a href="" className="pl-4">
+								<div className="flex flex-col space-y-2">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Combat Upgrades
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Ability Tuning
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Mobile Services
 									</a>
 								</div>
@@ -166,19 +168,20 @@ const Navbar = () => {
 						{/* Industries */}
 						<div>
 							<button
-								onClick={() => setIndustriesDropdown(!industriesDropdown)}>
-								Industries
-								<FaChevronDown />
+								onClick={() => setIndustriesDropdown(!industriesDropdown)}
+								className="flex items-center">
+								<span>Industries</span>
+								<FaChevronDown className="text-xl ml-2 hover:text-amber-700 cursor-pointer" />
 							</button>
 							{industriesDropdown && (
-								<div>
-									<a href="" className="pl-4">
+								<div className="flex flex-col space-y-2">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Private
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Commercial
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Military
 									</a>
 								</div>
@@ -186,30 +189,38 @@ const Navbar = () => {
 						</div>
 						{/* Locations */}
 						<div>
-							<button onClick={() => setLocationsDropdown(!locationsDropdown)}>
+							<button
+								onClick={() => setLocationsDropdown(!locationsDropdown)}
+								className="flex items-center">
 								Locations
-								<FaChevronDown />
+								<FaChevronDown className="text-xl ml-2 hover:text-amber-700 cursor-pointer" />
 							</button>
 							{locationsDropdown && (
-								<div>
-									<a href="" className="pl-4">
+								<div className="flex flex-col space-y-2">
+									<a href="" className="pl-4 hover:text-amber-700">
 										London
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										Tokyo
 									</a>
-									<a href="" className="pl-4">
+									<a href="" className="pl-4 hover:text-amber-700">
 										New York
 									</a>
 								</div>
 							)}
 						</div>
 						{/* Careers */}
-						<a href="">Careers</a>
+						<a href="" className="hover:text-amber-700">
+							Careers
+						</a>
 						{/* Contact */}
-						<a href="">Contact</a>
+						<a href="" className="hover:text-amber-700">
+							Contact
+						</a>
 						{/* About */}
-						<a href="">About</a>
+						<a href="" className="hover:text-amber-700">
+							About
+						</a>
 					</div>
 				</nav>
 			)}
