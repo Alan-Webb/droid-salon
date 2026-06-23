@@ -143,11 +143,14 @@ const Navbar = () => {
 						<a href="">Home</a>
 						{/* Services */}
 						<div>
-							<button onClick={() => setServicesDropdown(!servicesDropdown)}>
-								Services
+							<button
+								onClick={() => setServicesDropdown(!servicesDropdown)}
+								className="flex items-center">
+								<span>Services</span>
+								<FaChevronDown className="text-sm ml-2 cursor-pointer" />
 							</button>
 							{servicesDropdown && (
-								<div>
+								<div className="flex flex-col items-center">
 									<a href="" className="pl-4">
 										Combat Upgrades
 									</a>
@@ -165,6 +168,7 @@ const Navbar = () => {
 							<button
 								onClick={() => setIndustriesDropdown(!industriesDropdown)}>
 								Industries
+								<FaChevronDown />
 							</button>
 							{industriesDropdown && (
 								<div>
@@ -184,6 +188,7 @@ const Navbar = () => {
 						<div>
 							<button onClick={() => setLocationsDropdown(!locationsDropdown)}>
 								Locations
+								<FaChevronDown />
 							</button>
 							{locationsDropdown && (
 								<div>
