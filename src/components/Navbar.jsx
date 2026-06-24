@@ -20,11 +20,11 @@ const Navbar = () => {
 						<img
 							src={logo}
 							alt="Droid Salon Logo"
-							className="w-12 lg:w-20 h-12 lg:h-20 m-2 rounded-full bg-amber-600 border-2 border-stone-400"
+							className="w-12 lg:w-20 h-12 lg:h-20 m-2 rounded-full bg-amber-600 border border-white"
 						/>
 						<div className="flex flex-col mt-2 lg:mt-4 ms-2 lg:text-3xl font-bold text-amber-700">
-							<span>Droid</span>
-							<span>Salon</span>
+							<span className="border-t border-amber-500">Droid</span>
+							<span className="border-b border-amber-500">Salon</span>
 						</div>
 					</div>
 				</div>
@@ -56,13 +56,13 @@ const Navbar = () => {
 								<FaChevronDown className="text-xs" />
 							</a>
 							<div className="absolute hidden group-hover:block rounded-md w-44 bg-stone-200 shadow-lg py-2">
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Combat Upgrades
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Ability Tuning
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Mobile Services
 								</a>
 							</div>
@@ -76,13 +76,13 @@ const Navbar = () => {
 								<FaChevronDown className="text-xs" />
 							</a>
 							<div className="absolute hidden group-hover:block rounded-md w-44 bg-stone-200 shadow-lg py-2">
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Private
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Commercial
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Military
 								</a>
 							</div>
@@ -96,13 +96,13 @@ const Navbar = () => {
 								<FaChevronDown className="text-xs" />
 							</a>
 							<div className="absolute hidden group-hover:block rounded-md w-44 bg-stone-200 shadow-lg py-2">
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									London
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									Tokyo
 								</a>
-								<a href="" className="block px-4 py-2 hover:bg-amber-300">
+								<a href="" className="block px-4 py-2 hover:bg-amber-500">
 									New York
 								</a>
 							</div>
@@ -124,7 +124,7 @@ const Navbar = () => {
 				{/*BUTTONS */}
 				<div>
 					{/* Quote Btn */}
-					<button className="hidden lg:block px-5 py-2 m-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 cursor-pointer">
+					<button className="hidden lg:block border px-5 py-2 m-2 bg-amber-600 text-white rounded-full hover:bg-amber-500 cursor-pointer">
 						Get A Quote
 					</button>
 					{/* Hamburger Btn */}
@@ -138,7 +138,7 @@ const Navbar = () => {
 			{/* MOBILE MENU */}
 			{mobileMenu && (
 				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
-					<div className="flex flex-col py-8 text-4xl space-y-2 min-h-[60vh] pl-12 font-medium">
+					<div className="flex flex-col py-8 text-4xl space-y-2 min-h-[50vh] pl-12 overflow-y-auto">
 						{/* Home */}
 						<a href="" className="hover:text-amber-700">
 							Home
