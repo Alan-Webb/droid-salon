@@ -8,10 +8,10 @@ const Hero = () => {
 				<div>
 					<img src={Hero1} alt="multi-purpose droids" />
 					{/* Overlay */}
-					<div className="absolute inset-0 bg-linear-to-r from-black via-amber-900/50 to-amber-800/50"></div>
+					<div className="absolute inset-0 bg-linear-to-r from-black via-amber-900/30 to-amber-800/30"></div>
 				</div>
 				{/* CONTENT */}
-				<div>
+				<div className="absolute">
 					<div>
 						<h1>Droid Salon</h1>
 						<p>Your Droids Best Version Starts Here</p>
