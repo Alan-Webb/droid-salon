@@ -3,7 +3,7 @@ import Hero1 from "../assets/hero1.webp";
 const Hero = () => {
 	return (
 		<div>
-			<div className="relative">
+			<div className="relative h-[50vh] md:h-[90vh]">
 				{/* IMAGE CAROUSEL */}
 				<div className="relative">
 					<img src={Hero1} alt="multi-purpose droids" />
@@ -12,9 +12,13 @@ const Hero = () => {
 				</div>
 				{/* CONTENT */}
 				<div className="absolute inset-12 flex items-center justify-start max-w-7xl text-amber-400">
-					<div>
-						<h1 className="text-6xl font-bold mb-4">Droid Salon</h1>
-						<p className="text-4xl">Your Droids Best Version Starts Here</p>
+					<div className="max-w-lg">
+						<h1 className="hidden sm:block text-6xl font-bold mb-4">
+							Droid Salon
+						</h1>
+						<p className="text-4xl sm:text-5xl">
+							Your Droids Best Version Starts Here
+						</p>
 					</div>
 				</div>
 			</div>
