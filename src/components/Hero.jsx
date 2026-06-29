@@ -1,3 +1,7 @@
+import {Swiper, SwiperSlide} from "swiper/react";
+// import {Effect, Autoplay} from "swiper";
+import "swiper/css";
+import "swiper/css/effect-fade";
 import Hero1 from "../assets/hero1.webp";
 
 const Hero = () => {
@@ -14,7 +18,7 @@ const Hero = () => {
 				<div className="absolute inset-12 flex items-center justify-start max-w-7xl text-amber-400">
 					<div className="max-w-lg">
 						<h1 className="hidden sm:block text-6xl font-bold mb-4">
-							Droid Salon
+							From Glitches to Greatness
 						</h1>
 						<p className="text-4xl sm:text-5xl">
 							Your Droids Best Version Starts Here
