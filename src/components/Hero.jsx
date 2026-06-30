@@ -7,6 +7,11 @@ import Hero1 from "../assets/hero1.webp";
 const Hero = () => {
 	return (
 		<div>
+			<Swiper
+				// modules={[ EffectFade]}
+				effect="fade"
+				fadeEffect={{crossFade: true}}
+				loop={true}></Swiper>
 			<div className="relative h-[50vh] md:h-[90vh]">
 				{/* IMAGE CAROUSEL */}
 				<div className="relative">
