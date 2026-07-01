@@ -11,25 +11,27 @@ const Hero = () => {
 				fadeEffect={{crossFade: true}}
 				loop={true}
 				slidesPerView={1}>
-				<div className="relative h-[50vh] md:h-[90vh]">
-					{/* IMAGE CAROUSEL */}
-					<div className="relative">
-						<img src={Hero1} alt="multi-purpose droids" />
-						{/* Overlay */}
-						<div className="absolute inset-0 bg-linear-to-r from-black via-amber-900/30 to-amber-800/30"></div>
-					</div>
-					{/* CONTENT */}
-					<div className="absolute inset-12 flex items-center justify-start max-w-7xl text-amber-400">
-						<div className="max-w-lg">
-							<h1 className="hidden sm:block text-6xl font-bold mb-4">
-								From Glitches to Greatness
-							</h1>
-							<p className="text-4xl sm:text-5xl">
-								Your Droids Best Version Starts Here
-							</p>
+				<SwiperSlide>
+					<div className="relative h-[50vh] md:h-[90vh]">
+						{/* IMAGE CAROUSEL */}
+						<div className="relative">
+							<img src={Hero1} alt="multi-purpose droids" />
+							{/* Overlay */}
+							<div className="absolute inset-0 bg-linear-to-r from-black via-amber-900/30 to-amber-800/30"></div>
+						</div>
+						{/* CONTENT */}
+						<div className="absolute inset-12 flex items-center justify-start max-w-7xl text-amber-400">
+							<div className="max-w-lg">
+								<h1 className="hidden sm:block text-6xl font-bold mb-4">
+									From Glitches to Greatness
+								</h1>
+								<p className="text-4xl sm:text-5xl">
+									Your Droids Best Version Starts Here
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
+				</SwiperSlide>
 			</Swiper>
 		</div>
 	);
