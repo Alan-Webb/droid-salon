@@ -1,8 +1,11 @@
-
 const WhyChooseUs = () => {
-  return (
-    <div>WhyChooseUs</div>
-  )
-}
+	return (
+		<div>
+			<div>
+				<div></div>
+			</div>
+		</div>
+	);
+};
 
-export default WhyChooseUs
+export default WhyChooseUs;
