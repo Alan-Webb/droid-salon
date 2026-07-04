@@ -1,7 +1,7 @@
 const WhyChooseUs = () => {
 	return (
-		<div>
-			<div>
+		<div className="py-20 bg-gray-100">
+			<div className="flex">
 				{/* Left Content */}
 				<div></div>
 				{/* Right Content */}
