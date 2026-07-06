@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
 					<h2 className="text-3xl font-bold mb-4 px-4 lg:px-0">
 						Why Choose Us?
 					</h2>
-					<p>
+					<p className="max-w-lg px-4 lg:px-0">
 						Combining expert craftsmanship with advanced technology, we deliver
 						reliable maintenance and precision upgrades for every generation of
 						droid.
@@ -18,7 +18,9 @@ const WhyChooseUs = () => {
 					</p>
 				</div>
 				{/* Right Content */}
-				<div></div>
+				<div>
+
+				</div>
 			</div>
 		</div>
 	);

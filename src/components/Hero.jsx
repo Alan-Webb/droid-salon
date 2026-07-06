@@ -6,7 +6,7 @@ const Hero = () => {
 			<div className="relative h-[50vh] md:h-[90vh]">
 				<div className="relative">
 					{/* Image */}
-					<img src={Hero1} alt="multi-purpose droids" />
+					<img src={Hero1} alt="multi-purpose droids" className="w-full h-[95vh]"/>
 					{/* Overlay */}
 					<div className="absolute inset-0 bg-linear-to-r from-black via-amber-900/30 to-amber-800/30"></div>
 				</div>
