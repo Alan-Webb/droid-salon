@@ -138,7 +138,7 @@ const Navbar = () => {
 			{/* MOBILE MENU */}
 			{mobileMenu && (
 				<nav className={`${mobileMenu ? "block" : "hidden"} lg:hidden`}>
-					<div className="flex flex-col py-8 text-4xl space-y-2 min-h-[50vh] pl-12 overflow-y-auto">
+					<div className="flex flex-col py-8 text-4xl space-y-2 h-[48vh] pl-12 overflow-y-auto">
 						{/* Home */}
 						<a href="" className="hover:text-amber-700">
 							Home
