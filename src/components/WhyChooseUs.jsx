@@ -1,3 +1,5 @@
+import WhyChooseUsImg from "../assets/whyChooseUs.webp";
+
 const WhyChooseUs = () => {
 	return (
 		<div className="py-20 bg-gray-200 px-4 md:px-6 lg:px-8">
@@ -47,7 +49,9 @@ const WhyChooseUs = () => {
 						</div>
 					</div>
 					{/* RIGHT CONTENT */}
-					<div></div>
+					<div>
+						<img src={WhyChooseUsImg} alt="droid servicing" />
+					</div>
 				</div>
 			</div>
 		</div>
