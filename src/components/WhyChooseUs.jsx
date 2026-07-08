@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
 			<div className="max-w-7xl mx-auto">
 				<div className="flex flex-col lg:flex-row">
 					{/* LEFT CONTENT */}
-					<div>
+					<div className="w-full lg:w-1/2">
 						<h2 className="text-3xl font-bold mb-4 px-4 lg:px-0">
 							Why Choose <span className="text-amber-600">Droid Salon</span>
 						</h2>
@@ -49,8 +49,12 @@ const WhyChooseUs = () => {
 						</div>
 					</div>
 					{/* RIGHT CONTENT */}
-					<div>
-						<img src={WhyChooseUsImg} alt="droid servicing" />
+					<div className="w-full lg:w-1/2 mt-6 lg:mt-0 px-4 lg:px-0">
+						<img
+							src={WhyChooseUsImg}
+							alt="droid servicing"
+							className="rounded-full object-cover"
+						/>
 					</div>
 				</div>
 			</div>
