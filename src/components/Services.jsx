@@ -9,7 +9,7 @@ const services = [
 		image: Services1,
 		link: "",
 		description:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
+			"Every maintenance service, repair, and upgrade undergoes rigorous quality testing before completion, giving you confidence that your droid is ready to perform at its absolute best.",
 	},
 	{
 		id: 2,
@@ -17,7 +17,7 @@ const services = [
 		image: Services2,
 		link: "",
 		description:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
+			"From routine servicing and software updates to full mechanical overhauls, we offer comprehensive maintenance packages that keep your droid operating at peak condition year-round.",
 	},
 	{
 		id: 3,
@@ -25,7 +25,7 @@ const services = [
 		image: Services3,
 		link: "",
 		description:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
+			"Let us bring our experienced engineers to you, combining technical expertise with meticulous craftsmanship to deliver reliable repairs and precision upgrades every time.",
 	},
 ];
 
