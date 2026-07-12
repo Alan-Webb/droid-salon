@@ -11,6 +11,22 @@ const services = [
 		description:
 			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
 	},
+	{
+		id: 2,
+		title: "Ability Tuning",
+		image: Services2,
+		link: "",
+		description:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
+	},
+	{
+		id: 3,
+		title: "Mobile Services",
+		image: Services3,
+		link: "",
+		description:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nobis odit",
+	},
 ];
 
 const Services = () => {
