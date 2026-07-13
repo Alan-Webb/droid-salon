@@ -1,3 +1,4 @@
+import ServicesBG from "../assets/servicesBG.webp";
 import Services1 from "../assets/services1.webp";
 import Services2 from "../assets/services2.webp";
 import Services3 from "../assets/services3.webp";
@@ -25,13 +26,13 @@ const services = [
 		image: Services3,
 		link: "",
 		description:
-			"Let us bring our experienced engineers to you, combining technical expertise with meticulous craftsmanship to deliver reliable repairs and precision upgrades every time.",
+			"Let us bring our experienced engineers to you. Their technical expertise with meticulous craftsmanship to deliver reliable repairs and precision upgrades every time.",
 	},
 ];
 
 const Services = () => {
 	return (
-		<div>
+		<div style={{backgroundImage: `url("${ServicesBG}")`}}>
 			<div>
 				<h2>Our Services</h2>
 			</div>
