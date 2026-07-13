@@ -2,15 +2,15 @@ import WhyChooseUsImg from "../assets/whyChooseUs.webp";
 
 const WhyChooseUs = () => {
 	return (
-		<div className="py-20 bg-gray-200 px-4 md:px-6 lg:px-8">
+		<div className="py-20 bg-stone-300 px-4 md:px-6 lg:px-8">
 			<div className="max-w-7xl mx-auto">
 				<div className="flex flex-col lg:flex-row">
 					{/* LEFT CONTENT */}
 					<div className="w-full lg:w-1/2">
-						<h2 className="text-3xl font-bold mb-4 px-4 lg:px-0">
+						<h2 className="text-3xl font-extrabold mb-4 px-4 lg:px-0">
 							Why Choose <span className="text-amber-600">Droid Salon</span>
 						</h2>
-						<p className="max-w-lg px-4 lg:px-0">
+						<p className="max-w-lg font-semibold px-4 lg:px-0">
 							Combining expert craftsmanship with advanced technology, we
 							deliver reliable maintenance and precision upgrades for every
 							generation of droid.
@@ -22,8 +22,8 @@ const WhyChooseUs = () => {
 						{/* Feature */}
 						{/* Entry 1 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-xl font-bold">Expert Technicians</h3>
-							<p>
+							<h3 className="text-2xl font-extrabold">Expert Technicians</h3>
+							<p className="font-semibold">
 								Our experienced engineers combine technical expertise with
 								meticulous craftsmanship to deliver reliable repairs and
 								precision upgrades every time.
@@ -31,8 +31,8 @@ const WhyChooseUs = () => {
 						</div>
 						{/* Entry 2 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-xl font-bold">Premium Components</h3>
-							<p>
+							<h3 className="text-2xl font-extrabold">Premium Components</h3>
+							<p className="font-semibold">
 								We use only high-quality replacement parts and certified
 								components to ensure every repair and upgrade meets the highest
 								standards of durability and reliability.
@@ -40,8 +40,8 @@ const WhyChooseUs = () => {
 						</div>
 						{/* Entry 3 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-xl font-bold">Safety & Security</h3>
-							<p>
+							<h3 className="text-2xl font-extrabold">Safety & Security</h3>
+							<p className="font-semibold">
 								Every service includes thorough testing, firmware verification,
 								and system integrity checks to ensure your droid leaves our
 								workshop operating safely and securely.
@@ -49,11 +49,11 @@ const WhyChooseUs = () => {
 						</div>
 					</div>
 					{/* RIGHT CONTENT */}
-					<div className="w-full lg:w-1/2 mt-6 lg:mt-0 px-4 lg:px-0">
+					<div className="w-full lg:w-1/2 mt-6 lg:mt-0 px-4 lg:px-0 ">
 						<img
 							src={WhyChooseUsImg}
 							alt="droid servicing"
-							className="rounded-full object-cover"
+							className="rounded-full object-cover border border-amber-600"
 						/>
 					</div>
 				</div>

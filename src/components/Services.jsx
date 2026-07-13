@@ -26,13 +26,15 @@ const services = [
 		image: Services3,
 		link: "",
 		description:
-			"Let us bring our experienced engineers to you. Their technical expertise with meticulous craftsmanship to deliver reliable repairs and precision upgrades every time.",
+			"Let us bring our experienced engineers to you. Their technical expertise and meticulous craftsmanship will deliver reliable repairs and precision upgrades every time.",
 	},
 ];
 
 const Services = () => {
 	return (
-		<div style={{backgroundImage: `url("${ServicesBG}")`}}>
+		<div
+			style={{backgroundImage: `url("${ServicesBG}")`}}
+			className="py-20 bg-cover bg-center">
 			<div>
 				<h2>Our Services</h2>
 			</div>
