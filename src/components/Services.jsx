@@ -37,12 +37,20 @@ const Services = () => {
 			className="py-20 bg-cover bg-center">
 			<div className="max-w-7xl mx-auto">
 				{/* Title */}
-				<h2>Our Services</h2>
+				<h2 className="text-center text-4xl font-bold text-amber-500 tracking-wider">
+					Our Services
+				</h2>
 				{/* CARDS */}
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
 					{services.map((service) => (
-						<div key={service.id} className="bg-white p-6 rounded-lg">
-							<img src={service.image} alt={service.title} className="w-full" />
+						<div
+							key={service.id}
+							className="bg-stone-200 p-6 rounded-lg shadow-md">
+							<img
+								src={service.image}
+								alt={service.title}
+								className="w-full h-48 object-cover rounded-lg mb-4"
+							/>
 							<h3 className="text-xl font-bold mb-2">{service.title}</h3>
 							<p className="text-sm">{service.description}</p>
 						</div>
