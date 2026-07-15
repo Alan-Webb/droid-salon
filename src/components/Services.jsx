@@ -45,17 +45,17 @@ const Services = () => {
 					{services.map((service) => (
 						<div
 							key={service.id}
-							className="bg-stone-200 p-6 rounded-lg shadow-md">
+							className="bg-stone-200 p-6 rounded-lg shadow-md text-center">
 							<img
 								src={service.image}
 								alt={service.title}
 								className="w-full h-48 object-cover rounded-lg mb-4"
 							/>
-							<div className="text-center">
-								<h3 className="text-xl uppercase tracking-wide font-bold mb-2">{service.title}</h3>
-								<p className="text-md">{service.description}</p>
-								<a href="">{service.link}</a>
-							</div>
+							<h3 className="text-xl uppercase tracking-wide font-bold mb-2">
+								{service.title}
+							</h3>
+							<p className="text-md">{service.description}</p>
+							<a href="">{service.link}</a>
 						</div>
 					))}
 				</div>
