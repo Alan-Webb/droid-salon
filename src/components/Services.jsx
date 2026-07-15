@@ -36,7 +36,7 @@ const Services = () => {
 			style={{backgroundImage: `url("${ServicesBG}")`}}
 			className="py-20 bg-cover bg-center">
 			<div className="max-w-7xl mx-auto">
-				{/* Title */}
+				{/* Heading */}
 				<h2 className="text-center text-4xl font-bold text-amber-500 tracking-wider">
 					Our Services
 				</h2>
@@ -51,8 +51,11 @@ const Services = () => {
 								alt={service.title}
 								className="w-full h-48 object-cover rounded-lg mb-4"
 							/>
-							<h3 className="text-xl font-bold mb-2">{service.title}</h3>
-							<p className="text-sm">{service.description}</p>
+							<div className="text-center">
+								<h3 className="text-xl uppercase tracking-wide font-bold mb-2">{service.title}</h3>
+								<p className="text-md">{service.description}</p>
+								<a href="">{service.link}</a>
+							</div>
 						</div>
 					))}
 				</div>

@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
 			<div className="max-w-7xl mx-auto">
 				<div className="flex flex-col lg:flex-row">
 					{/* LEFT CONTENT */}
-					<div className="w-full lg:w-1/2">
+					<div className="w-full lg:w-1/2 sm:pe-12">
 						<h2 className="text-3xl font-extrabold mb-4 px-4 lg:px-0">
 							Why Choose <span className="text-amber-600">Droid Salon</span>
 						</h2>
@@ -22,7 +22,9 @@ const WhyChooseUs = () => {
 						{/* Feature */}
 						{/* Entry 1 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-2xl font-extrabold">Expert Technicians</h3>
+							<h3 className="text-2xl font-extrabold mb-2">
+								Expert Technicians
+							</h3>
 							<p className="font-semibold">
 								Our experienced engineers combine technical expertise with
 								meticulous craftsmanship to deliver reliable repairs and
@@ -31,7 +33,9 @@ const WhyChooseUs = () => {
 						</div>
 						{/* Entry 2 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-2xl font-extrabold">Premium Components</h3>
+							<h3 className="text-2xl font-extrabold mb-2">
+								Premium Components
+							</h3>
 							<p className="font-semibold">
 								We use only high-quality replacement parts and certified
 								components to ensure every repair and upgrade meets the highest
@@ -40,7 +44,9 @@ const WhyChooseUs = () => {
 						</div>
 						{/* Entry 3 */}
 						<div className="px-4 lg:px-0 mt-8 mb-6">
-							<h3 className="text-2xl font-extrabold">Safety & Security</h3>
+							<h3 className="text-2xl font-extrabold mb-2">
+								Safety & Security
+							</h3>
 							<p className="font-semibold">
 								Every service includes thorough testing, firmware verification,
 								and system integrity checks to ensure your droid leaves our
@@ -49,11 +55,11 @@ const WhyChooseUs = () => {
 						</div>
 					</div>
 					{/* RIGHT CONTENT */}
-					<div className="w-full lg:w-1/2 mt-6 lg:mt-0 px-4 lg:px-0 ">
+					<div className="w-full lg:w-1/2 mt-6 lg:mt-12 px-4 lg:px-0 ">
 						<img
 							src={WhyChooseUsImg}
 							alt="droid servicing"
-							className="rounded-full object-cover border border-amber-600"
+							className="rounded-full border border-amber-600"
 						/>
 					</div>
 				</div>
