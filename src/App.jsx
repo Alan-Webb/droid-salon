@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<Hero />
 			<WhyChooseUs />
 			<Services />
+			<Testimonials />
 		</>
 	);
 };
