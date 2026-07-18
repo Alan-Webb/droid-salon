@@ -73,18 +73,16 @@ const Testimonials = () => {
 			<div className="h-1 w-20 bg-white mb-10"></div>
 			{/* TESTIMONIALS CARD */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				{reviews.map(review) => (
+				{reviews.map((review) => (
 					<div
 						key={review.id}
-						className="relative rounded-lg p-6 h-full backdrop-blur-3xl bg-stone-500/10"
+						className="relative rounded-lg p-6 h-full backdrop-blur-3xl bg-stone-500/10">
 						<div className="flex items-center mb-4">
-							{/* Name & Title */}
 							<div>
 								<h2 className="text-lg font-semibold">{review.name}</h2>
 								<p className="text-sm font-light">{review.position}</p>
 							</div>
 						</div>
-						{/* Feedback */}
 						<p className="leading-relaxed">{review.feedback}</p>
 					</div>
 				))}
