@@ -58,7 +58,7 @@ const reviews = [
 
 const Testimonials = () => {
 	return (
-		<div className="bg-stone-300 px-4">
+		<div className="bg-stone-300 px-4 py-12">
 			<h1 className="text-center text-4xl font-bold text-amber-500 tracking-wider py-12">
 				What People Are Saying
 			</h1>
@@ -67,7 +67,7 @@ const Testimonials = () => {
 				{reviews.map((review) => (
 					<div
 						key={review.id}
-						className="relative rounded-lg p-6 h-full backdrop-blur-3xl bg-amber-400/10">
+						className="relative rounded-lg p-6 h-full backdrop-blur-3xl bg-amber-400/10 border border-amber-600">
 						<div className="flex items-center mb-4">
 							{/* Image */}
 							<img
