@@ -39,7 +39,7 @@ const Industries = () => {
 			<div className="max-w-7xl mx-auto">
 				{/* Heading */}
 				<h2 className="text-center text-4xl font-bold text-amber-500 tracking-wider">
-					Industries
+					Industries We Serve
 				</h2>
 				{/* CARDS */}
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 px-8 lg:px-0">
