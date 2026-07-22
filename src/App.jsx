@@ -4,7 +4,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Industries from "./components/Industries";
-import Form from "./components/Form";
+import Contact from "./components/Contact";
 
 const App = () => {
 	return (
@@ -15,7 +15,7 @@ const App = () => {
 			<Services />
 			<Testimonials />
 			<Industries />
-			<Form />
+			<Contact />
 		</>
 	);
 };
