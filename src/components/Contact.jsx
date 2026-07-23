@@ -7,7 +7,7 @@ const Contact = () => {
 					<h2>Contact Us</h2>
 					<p>
 						Fine tuning, software updates or a complete overhaul, contact us to
-						upgrade your droid and upgrade your life{" "}
+						upgrade your droid and upgrade your life.
 					</p>
 				</div>
 				{/* FORM */}
