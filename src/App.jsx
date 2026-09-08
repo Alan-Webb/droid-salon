@@ -7,6 +7,7 @@ import Industries from "./components/Industries";
 import Contact from "./components/Contact";
 import Locations from "./components/Locations";
 import Faqs from "./components/Faqs";
+import Marquee from "./components/Marquee";
 
 const App = () => {
 	return (
@@ -20,6 +21,7 @@ const App = () => {
 			<Contact />
 			<Locations />
 			<Faqs />
+			<Marquee />
 		</>
 	);
 };
