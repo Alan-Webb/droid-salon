@@ -10,7 +10,7 @@ const questionsAnswers = [
 	},
 	{
 		id: 2,
-		question: "Do you offer emergency roadside or field repair?",
+		question: "Do you offer emergency roadside repair?",
 		answer:
 			"Yes! Our mobile repair skiffs are available for field calls within sector limits. For stranded travelers, we offer 24/7 emergency dispatch.",
 	},
@@ -34,7 +34,7 @@ const questionsAnswers = [
 	},
 	{
 		id: 6,
-		question: "Can you install combat mods on a utility droid?",
+		question: "Can I install combat mods on a utility droid?",
 		answer:
 			"We offer legal defense upgrades, such as reinforced plating, shock-prod attachments, and upgraded perimeter sensors. Military-grade combat reprogramming requires proper sector authorization permits.",
 	},
@@ -49,7 +49,7 @@ const Faqs = () => {
 			<div className="max-w-7xl mx-auto">
 				<div className="flex flex-col lg:flex-row">
 					{/* Q&A ACCORDION */}
-					<div className="w-full lg:w-3/4 ms-8 space-y-8 px-8 lg:px-0">
+					<div className="w-full lg:w-3/4 ms-8 space-y-8 px-8 lg:px-0 mb-8">
 						{questionsAnswers.map((item) => (
 							<FaqItem
 								key={item.id}
@@ -59,7 +59,7 @@ const Faqs = () => {
 						))}
 					</div>
 					{/* RIGHT SIDE CONTENT */}
-					<div className="w-full lg:w-1/4 me-8 mt-6 lg:mt-0 lg:pl-8 me-24">
+					<div className="w-full lg:w-1/4 mt-6 lg:mt-0 lg:pl-8 me-24">
 						<div className="bg-amber-500 p-8 rounded-xl mx-4 px-8 lg:px-0 text-center">
 							<h3 className="text-xl font-bold mb-2">Still have questions?</h3>
 							<p className="text-lg m-4">
