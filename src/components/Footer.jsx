@@ -14,7 +14,10 @@ const Footer = () => {
 					<p>Droid Salon</p>
 				</div>
 				{/* SERVICES */}
-				<div></div>
+				<div>
+					<h4>Services</h4>
+				
+				</div>
 				{/* COLUMN 3 CONTENT */}
 				<div></div>
 				{/* COLUMN 4 CONTENT */}
