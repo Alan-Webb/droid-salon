@@ -16,7 +16,11 @@ const Footer = () => {
 				{/* SERVICES */}
 				<div>
 					<h4>Services</h4>
-				
+					<ul>
+						<li>Combat Upgrades</li>
+						<li>Ability Tuning</li>
+						<li>Mobile Services</li>
+					</ul>
 				</div>
 				{/* COLUMN 3 CONTENT */}
 				<div></div>
