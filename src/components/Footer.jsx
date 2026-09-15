@@ -19,16 +19,16 @@ const Footer = () => {
 					<h4>Services</h4>
 					<ul>
 						<li>
+							<FaChevronRight className="text-xs" />
 							Combat Upgrades
-							<FaChevronRight className="text-xs" />
 						</li>
 						<li>
+							<FaChevronRight className="text-xs" />
 							Ability Tuning
-							<FaChevronRight className="text-xs" />
 						</li>
 						<li>
-							Mobile Services
 							<FaChevronRight className="text-xs" />
+							Mobile Services
 						</li>
 					</ul>
 				</div>
