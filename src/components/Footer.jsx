@@ -1,5 +1,5 @@
 import logo from "../assets/logo.webp";
-import { FaChevronRight } from "react-icons/fa";
+import {FaChevronRight} from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -18,9 +18,18 @@ const Footer = () => {
 				<div>
 					<h4>Services</h4>
 					<ul>
-						<li>Combat Upgrades<FaChevronRight /></li>
-						<li>Ability Tuning</li>
-						<li>Mobile Services</li>
+						<li>
+							Combat Upgrades
+							<FaChevronRight className="text-xs" />
+						</li>
+						<li>
+							Ability Tuning
+							<FaChevronRight className="text-xs" />
+						</li>
+						<li>
+							Mobile Services
+							<FaChevronRight className="text-xs" />
+						</li>
 					</ul>
 				</div>
 				{/* COLUMN 3 CONTENT */}
