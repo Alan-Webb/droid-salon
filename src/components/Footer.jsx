@@ -18,7 +18,7 @@ const Footer = () => {
 				<div>
 					<h4>Services</h4>
 					<ul>
-						<li>
+						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
 							Combat Upgrades
 						</li>
