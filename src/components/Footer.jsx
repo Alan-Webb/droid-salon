@@ -20,15 +20,15 @@ const Footer = () => {
 					<ul>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							Combat Upgrades
+							<span>Combat Upgrades</span>
 						</li>
 						<li>
 							<FaChevronRight className="text-xs" />
-							Ability Tuning
+							<span>Ability Tuning</span>
 						</li>
 						<li>
 							<FaChevronRight className="text-xs" />
-							Mobile Services
+							<span>Mobile Services</span>
 						</li>
 					</ul>
 				</div>
