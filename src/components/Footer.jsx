@@ -32,8 +32,24 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				{/* COLUMN 3 CONTENT */}
-				<div></div>
+				{/* QUICK LINKS */}
+				<div>
+					<h4>Services</h4>
+					<ul>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span>Combat Upgrades</span>
+						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span>Ability Tuning</span>
+						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span>Mobile Services</span>
+						</li>
+					</ul>
+				</div>
 				{/* COLUMN 4 CONTENT */}
 				<div></div>
 			</div>
