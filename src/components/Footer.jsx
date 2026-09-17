@@ -22,11 +22,11 @@ const Footer = () => {
 							<FaChevronRight className="text-xs" />
 							<span>Combat Upgrades</span>
 						</li>
-						<li>
+						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
 							<span>Ability Tuning</span>
 						</li>
-						<li>
+						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
 							<span>Mobile Services</span>
 						</li>
