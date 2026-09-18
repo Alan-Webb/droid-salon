@@ -38,7 +38,7 @@ const Footer = () => {
 					<ul>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span></span>
+							<span>Home</span>
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
