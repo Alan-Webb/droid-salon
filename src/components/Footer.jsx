@@ -34,19 +34,19 @@ const Footer = () => {
 				</div>
 				{/* QUICK LINKS */}
 				<div>
-					<h4>Services</h4>
+					<h4>Quick Links</h4>
 					<ul>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span>Combat Upgrades</span>
+							<span></span>
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span>Ability Tuning</span>
+							<span></span>
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span>Mobile Services</span>
+							<span></span>
 						</li>
 					</ul>
 				</div>
