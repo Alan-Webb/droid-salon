@@ -46,7 +46,7 @@ const Footer = () => {
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span></span>
+							<span>Services</span>
 						</li>
 					</ul>
 				</div>
