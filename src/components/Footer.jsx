@@ -42,7 +42,7 @@ const Footer = () => {
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span></span>
+							<span>About Us</span>
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
