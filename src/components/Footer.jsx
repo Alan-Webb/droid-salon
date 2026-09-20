@@ -48,6 +48,10 @@ const Footer = () => {
 							<FaChevronRight className="text-xs" />
 							<span>Services</span>
 						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span>Contact Us</span>
+						</li>
 					</ul>
 				</div>
 				{/* COLUMN 4 CONTENT */}
