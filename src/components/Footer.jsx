@@ -54,7 +54,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				{/* COLUMN 4 CONTENT */}
+				{/* ADDRESS SECTION */}
 				<div></div>
 			</div>
 		</div>
