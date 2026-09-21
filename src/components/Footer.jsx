@@ -57,6 +57,24 @@ const Footer = () => {
 				{/* ADDRESS SECTION */}
 				<div>
 					<h4></h4>
+					<ul>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span></span>
+						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span></span>
+						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span></span>
+						</li>
+						<li className="flex items-center space-x-2">
+							<FaChevronRight className="text-xs" />
+							<span></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
