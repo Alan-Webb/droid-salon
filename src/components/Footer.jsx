@@ -55,7 +55,9 @@ const Footer = () => {
 					</ul>
 				</div>
 				{/* ADDRESS SECTION */}
-				<div></div>
+				<div>
+					<h4></h4>
+				</div>
 			</div>
 		</div>
 	);
