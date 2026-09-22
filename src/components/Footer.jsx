@@ -60,7 +60,7 @@ const Footer = () => {
 					<ul>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
-							<span></span>
+							<span>7 Torrens Street, London, EC1V 1NQ</span>
 						</li>
 						<li className="flex items-center space-x-2">
 							<FaChevronRight className="text-xs" />
