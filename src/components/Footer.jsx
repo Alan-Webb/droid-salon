@@ -12,7 +12,7 @@ const Footer = () => {
 						alt="Droid Salon Logo"
 						className="w-12 lg:w-20 h-12 lg:h-20 m-2 rounded-full bg-amber-600 border border-white"
 					/>
-					<p>Droid Salon</p>
+					<p className="text-xl text-amber-700">Droid Salon</p>
 				</div>
 				{/* SERVICES */}
 				<div>
