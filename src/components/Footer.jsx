@@ -59,22 +59,15 @@ const Footer = () => {
 					<h4></h4>
 					<ul>
 						<li className="flex items-center space-x-2">
-							<FaChevronRight className="text-xs" />
 							<span>7 Torrens Street, London, EC1V 1NQ</span>
 						</li>
 						<li className="flex items-center space-x-2">
-							<FaChevronRight className="text-xs" />
 							Email:
 							<span>info@droidsalon.co.uk</span>
 						</li>
 						<li className="flex items-center space-x-2">
-							<FaChevronRight className="text-xs" />
 							Tel:
 							<span>01218 184 514</span>
-						</li>
-						<li className="flex items-center space-x-2">
-							<FaChevronRight className="text-xs" />
-							<span></span>
 						</li>
 					</ul>
 				</div>
