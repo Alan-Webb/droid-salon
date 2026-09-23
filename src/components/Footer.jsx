@@ -56,7 +56,7 @@ const Footer = () => {
 				</div>
 				{/* ADDRESS SECTION */}
 				<div>
-					<h4></h4>
+					<h4>Contact Us</h4>
 					<ul>
 						<li className="flex items-center space-x-2">
 							<span>7 Torrens Street, London, EC1V 1NQ</span>
