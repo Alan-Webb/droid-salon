@@ -18,15 +18,15 @@ const Footer = () => {
 				<div>
 					<h4>Services</h4>
 					<ul>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Combat Upgrades</span>
 						</li>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Ability Tuning</span>
 						</li>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Mobile Services</span>
 						</li>
@@ -36,19 +36,19 @@ const Footer = () => {
 				<div>
 					<h4>Quick Links</h4>
 					<ul>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Home</span>
 						</li>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>About Us</span>
 						</li>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Services</span>
 						</li>
-						<li className="flex items-center space-x-2">
+						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
 							<span>Contact Us</span>
 						</li>
