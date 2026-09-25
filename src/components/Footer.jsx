@@ -34,7 +34,7 @@ const Footer = () => {
 				</div>
 				{/* QUICK LINKS */}
 				<div>
-					<h4 className="font-bold">Quick Links</h4>
+					<h4 className="font-bold text-xl">Quick Links</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
