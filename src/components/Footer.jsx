@@ -5,8 +5,8 @@ const Footer = () => {
 	return (
 		<div className="py-8 bg-stone-400">
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				{/* COLUMN 1 CONTENT */}
-				<div>
+				{/* LOGO */}
+				<div className="mx-12">
 					<img
 						src={logo}
 						alt="Droid Salon Logo"
@@ -16,7 +16,7 @@ const Footer = () => {
 				</div>
 				{/* SERVICES */}
 				<div>
-					<h4>Services</h4>
+					<h4 className="font-bold text-xl">Services</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
@@ -34,7 +34,7 @@ const Footer = () => {
 				</div>
 				{/* QUICK LINKS */}
 				<div>
-					<h4>Quick Links</h4>
+					<h4 className="font-bold">Quick Links</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
 							<FaChevronRight className="text-xs" />
@@ -54,9 +54,9 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				{/* ADDRESS SECTION */}
+				{/* CONTACT */}
 				<div>
-					<h4>Contact Us</h4>
+					<h4 className="font-bold">Contact Us</h4>
 					<ul>
 						<li className="flex items-center space-x-2">
 							<span>7 Torrens Street, London, EC1V 1NQ</span>
