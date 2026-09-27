@@ -20,7 +20,7 @@ const Contact = () => {
 					</p>
 				</div>
 				{/* RIGHT SIDE FORM */}
-				<div className="mt-6 md:mt-0 px-8 md:px-4 w-full md:w-1/2 py-8">
+				<div className="px-8 md:px-4 w-full md:w-1/2 py-8">
 					<h2 className="text-4xl text-center font-bold text-amber-600 my-6">
 						Get A Quote
 					</h2>
