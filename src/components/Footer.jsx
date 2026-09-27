@@ -1,5 +1,5 @@
 import logo from "../assets/logo.webp";
-import {FaChevronRight, FaHouseUser, FaEnvelope} from "react-icons/fa";
+import {FaChevronRight, FaHouseUser, FaEnvelope, FaPhone} from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -67,7 +67,7 @@ const Footer = () => {
 							<span>info@droidsalon.co.uk</span>
 						</li>
 						<li className="flex items-center space-x-2">
-							Tel:
+							<FaPhone />
 							<span>01218 184 514</span>
 						</li>
 					</ul>
