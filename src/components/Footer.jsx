@@ -6,7 +6,7 @@ const Footer = () => {
 		<div className="py-8 bg-stone-400">
 			<div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* LOGO */}
-				<div className="mx-auto">
+				<div className="mx-auto  md:ms-0">
 					<img
 						src={logo}
 						alt="Droid Salon Logo"
@@ -15,7 +15,7 @@ const Footer = () => {
 					<h2 className="text-xl text-amber-700">Droid Salon</h2>
 				</div>
 				{/* SERVICES */}
-				<div className="ms-48">
+				<div className="ms-44 md:ms-0">
 					<h4 className="font-bold text-xl">Services</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
@@ -33,7 +33,7 @@ const Footer = () => {
 					</ul>
 				</div>
 				{/* QUICK LINKS */}
-				<div className="ms-48">
+				<div className="ms-44 md:ms-0">
 					<h4 className="font-bold text-xl">Quick Links</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
