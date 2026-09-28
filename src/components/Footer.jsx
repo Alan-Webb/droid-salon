@@ -4,18 +4,18 @@ import {FaChevronRight, FaHouseUser, FaEnvelope, FaPhone} from "react-icons/fa";
 const Footer = () => {
 	return (
 		<div className="py-8 bg-stone-400">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* LOGO */}
-				<div className="mx-12">
+				<div className="mx-auto">
 					<img
 						src={logo}
 						alt="Droid Salon Logo"
-						className="w-12 lg:w-20 h-12 lg:h-20 m-2 rounded-full bg-amber-600 border border-white"
+						className="w-12 lg:w-20 h-12 lg:h-20 m-2 ms-6 rounded-full bg-amber-600 border border-white"
 					/>
-					<p className="text-xl text-amber-700">Droid Salon</p>
+					<h2 className="text-xl text-amber-700">Droid Salon</h2>
 				</div>
 				{/* SERVICES */}
-				<div>
+				<div className="ms-48">
 					<h4 className="font-bold text-xl">Services</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
@@ -33,7 +33,7 @@ const Footer = () => {
 					</ul>
 				</div>
 				{/* QUICK LINKS */}
-				<div>
+				<div className="ms-48">
 					<h4 className="font-bold text-xl">Quick Links</h4>
 					<ul>
 						<li className="flex items-center space-x-2 cursor-pointer">
@@ -55,7 +55,7 @@ const Footer = () => {
 					</ul>
 				</div>
 				{/* CONTACT */}
-				<div>
+				<div className="mx-auto text-center">
 					<h4 className="font-bold text-xl">Contact Us</h4>
 					<ul>
 						<li className="flex items-center space-x-2">
